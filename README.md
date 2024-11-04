@@ -1,16 +1,50 @@
-# location
+# Location Tracker
 
-A new Flutter project.
+A Flutter application that tracks the user's location in real-time using a foreground service. The app periodically updates the user's location and displays the tracked data in a user-friendly interface.
+
+## Features
+
+- **Real-Time Location Tracking**: Continuously tracks the user's location.
+- **Foreground Service**: Runs a background service that keeps tracking even when the app is not in the foreground.
+- **Notification Updates**: Sends notifications with the current latitude and longitude.
+- **Permission Handling**: Manages location permissions and informs the user if permission is denied or permanently denied.
+- **Data Table Display**: Displays tracked location data in a structured table format.
+
+## Tech Stack
+
+- Flutter
+- Dart
+- `geolocator`: For retrieving the user's location.
+- `flutter_background_service`: For running background tasks.
+- `flutter_local_notifications`: For displaying notifications.
+- `permission_handler`: For managing permissions.
+- `intl`: For date and time formatting.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To run this project locally, follow these steps:
 
-A few resources to get you started if this is your first Flutter project:
+### Prerequisites
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Flutter SDK installed on your machine.
+- Android Studio or Visual Studio Code for development.
+- An Android device or emulator for testing.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Godse-07/background-location-tracking.git
+2. Navigate to the project directory:
+ 
+   ```bash
+   cd background-location-tracking
+3. Install dependencies:
+   
+   ```bash
+   flutter pub get
+4. Run the app:
+
+   ```bash
+   flutter run
